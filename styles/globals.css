@@ -19,7 +19,8 @@
 }
 
 .main:before {
-  background: radial-gradient(circle, rgba(2, 0, 36, 0) 0, #fafafa 100%);
+  background: #00008B;
+  background: linear-gradient(90deg, rgba(2,0,36,1) 11%, rgba(9,9,121,1) 52%, rgb(14, 5, 93) 100%);
   position: absolute;
   content: "";
   z-index: 2;
@@ -30,8 +31,9 @@
 
 .main:after {
   content: "";
-  background-image: url("/assets/images/grid.svg");
+  background-image: url("/assets/images/bg1.svg");
   z-index: 1;
+
   position: absolute;
   width: 100%;
   height: 100%;
@@ -45,7 +47,7 @@
   z-index: 3;
   width: 100%;
   max-width: 640px;
-  background-image: radial-gradient(
+  /* background-image: radial-gradient(
       at 27% 37%,
       hsla(215, 98%, 61%, 1) 0px,
       transparent 0%
@@ -55,7 +57,9 @@
     radial-gradient(at 10% 29%, hsla(256, 96%, 67%, 1) 0px, transparent 50%),
     radial-gradient(at 97% 96%, hsla(38, 60%, 74%, 1) 0px, transparent 50%),
     radial-gradient(at 33% 50%, hsla(222, 67%, 73%, 1) 0px, transparent 50%),
-    radial-gradient(at 79% 53%, hsla(343, 68%, 79%, 1) 0px, transparent 50%);
+    radial-gradient(at 79% 53%, hsla(343, 68%, 79%, 1) 0px, transparent 50%); */
+    background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 11%, rgba(9,9,121,1) 52%, rgb(10, 3, 88) 100%);
   position: absolute;
   content: "";
   width: 100%;
@@ -78,7 +82,7 @@
 }
 
 .black_btn {
-  @apply rounded-full border border-black bg-black py-1.5 px-5 text-white transition-all hover:bg-white hover:text-black text-center text-sm font-inter flex items-center justify-center;
+  @apply rounded-full border border-black bg-[#C3CEDA] py-1.5 px-5 text-[##0C4160] transition-all hover:bg-white hover:text-black text-center text-sm font-inter flex items-center justify-center;
 }
 
 .outline_btn {
