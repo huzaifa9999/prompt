@@ -14,6 +14,14 @@ const CreatePrompt = () => {
   const [post, setPost] = useState({ prompt: "", tag: "" });
   const [image, setImage] = useState();
 
+//  const  uploadImage(formData)=
+//   .then(uploadedImage => {
+//     console.log(uploadedImage);
+//   })
+//   .catch(_ => {
+//     console.log('Oooops, something went wrong!')
+//   })
+
 //   const uploadImage = async (e) => {
    
 //     const files = e.target.files;
@@ -36,7 +44,7 @@ const CreatePrompt = () => {
       const response = await fetch("/api/prompt/new", {
         method: "POST",
         body: JSON.stringify({
-          image:post.image,
+          // imageUrl:post.imageUrl,
           prompt: post.prompt,
           userId: session?.user.id,
           tag: post.tag,
@@ -58,7 +66,6 @@ const CreatePrompt = () => {
       type='Create'
       post={post}
       setPost={setPost}
-      // uploadImage={uploadImage}
       submitting={submitting}
       handleSubmit={createPrompt}
     />

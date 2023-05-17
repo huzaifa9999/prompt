@@ -1,8 +1,24 @@
+
+// "use client"
 import Link from "next/link";
+// import { useState } from "react";
+const Form = ({ type, post, setPost, submitting, handleSubmit}) => {
+  
+  
+  // const [selectedImage, setSelectedImage] = useState();
 
-const Form = ({ type, post, setPost, submitting, handleSubmit,uploadImage }) => {
- 
 
+  // const handleChange = event => {
+  //   setSelectedImage(event.target.files[0]);
+  // }
+
+  // const handleImageUpload = () => {
+  //   if (!selectedImage) { return; }
+  //   const formData = new FormData();
+  //   formData.append('image', selectedImage);
+
+  
+  
   return (
     <section className="w-full max-w-full flex-start flex-col">
       <h1 className="head_text text-left">
@@ -16,42 +32,21 @@ const Form = ({ type, post, setPost, submitting, handleSubmit,uploadImage }) => 
         onSubmit={handleSubmit}
         className="mt-10 w-full max-w-2xl flex flex-col gap-7 glassmorphism"
       >
-
-      {/* <div>
-        <button  component="label"
-                sx={{
-                  width: "fit-content",
-                  color: "#2ed480",
-                  textTransform: "capitalize",
-                  fontSize: 16,
-                }}>
-                upload
- <input
-              type="file"
-              name="image"
-              placeholder="Image"
-              //   autoComplete="off"
-              onChange={uploadImage}
-            // value={image}
-            />
+        {/* <input
+        onChange={handleChange}
+        accept=".jpg, .png, .jpeg"
+        className="fileInput mb-2"
+        type="file">
+      </input>
+      <div>
+        <button
+         onClick={handleImageUpload}
+         disabled={!selectedImage}
+         className="btn btn-primary mb-2">
+          Upload
         </button>
-      </div> */}
+        </div> */}
 
-      {/* <label>
-          <span className="font-satoshi font-semibold text-base text-gray-700">
-           image
-            <span className="font-normal">(upload image)</span>
-          </span>
-          <input
-            value={post.image}
-            type="file"
-            onChange={(e) => uploadImage()}
-            required
-            // placeholder="#tag"
-            className="iamge upload"
-          />
-          
-        </label> */}
         <label>
           <span className="font-satoshi font-semibold text-base text-gray-700">
             your prompt
