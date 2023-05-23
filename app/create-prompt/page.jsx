@@ -12,29 +12,6 @@ const CreatePrompt = () => {
 
   const [submitting, setIsSubmitting] = useState(false);
   const [post, setPost] = useState({ prompt: "", tag: "" });
-  const [image, setImage] = useState();
-
-//  const  uploadImage(formData)=
-//   .then(uploadedImage => {
-//     console.log(uploadedImage);
-//   })
-//   .catch(_ => {
-//     console.log('Oooops, something went wrong!')
-//   })
-
-//   const uploadImage = async (e) => {
-   
-//     const files = e.target.files;
-//     const data = new FormData();
-//     data.append('file', files[0]);
-//     const res = await fetch(process.env.NEXT_PUBLIC_CLOUDINARY, {
-//       method: 'POST',
-//       body: data
-//     })
-
-//     const file = res.json();
-// setImage(file);
-//   }
 
   const createPrompt = async (e) => {
     e.preventDefault();

@@ -22,13 +22,13 @@ const Nav = () => {
     >
       <Link href="/" className="flex gap-2 flex-center">
         <Image
-          src="/assets/images/logo.svg"
+          src="/assets/images/logo10.svg"
           alt="logo"
-          width={30}
-          height={30}
-          className="object-contain"
+          width={70}
+          height={70}
+          className=" rounded-full"
         />
-        <p className="logo-text">Promtopia</p>
+        <p className="logo-text text-[#E2DCC8]">Finding Prompt</p>
       </Link>
       {/* {alert(session?.user)} */}
       <div className="sm:flex hidden">

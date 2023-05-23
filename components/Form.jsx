@@ -25,7 +25,7 @@ const Form = ({ type, post, setPost, submitting, handleSubmit}) => {
         <span className="blue_gradient">{type} Post</span>
       </h1>
       <p className="desc text-left max-w-md">
-        {type} and share amazihng promptsd with the world,hue hue hue
+        {type} and provide innovative Promtps to the world
       </p>
 
       <form
@@ -63,7 +63,7 @@ const Form = ({ type, post, setPost, submitting, handleSubmit}) => {
         <label>
           <span className="font-satoshi font-semibold text-base text-gray-700">
             TAG{` `}
-            <span className="font-normal">(#product, #webdev,#huehue)</span>
+            <span className="font-normal">(#product, #webdev)</span>
           </span>
           <input
             value={post.tag}

@@ -7,11 +7,11 @@ const Home = () => {
     discover and share
     <br  className='max-md:hidden'/>
     <span className='orange_gradient text-center'>
-AI-powered promts
+Prompts for AI like ChatGPT
     </span>
   </h1>
   <p className=' desc text-center'>
-    hue hue hue hue hue hue hue hue
+   Filter the prompts by searching the desired tags
 
   </p>
   <Feed/>
